@@ -13,7 +13,7 @@ export const Menu = (props: {menuItems: Array<string>}) => {
             <ul>
                 {props.menuItems.map((name, index)=>{
                     return (
-                    <li id={index.toString()}><a href="">{name}</a></li>
+                    <li key={index}><a href="">{name}</a></li>
                     )
                 })}
             </ul>
